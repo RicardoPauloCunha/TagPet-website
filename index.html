@@ -8,97 +8,79 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <Style>
         * {
-            margin: 0px;
-            padding: 0px;
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
         }
 
-        .conteiner {
+        body {
             width: 100%;
             margin: auto;
+            font-family: Segoe UI Emoji;
         }
 
-        .menu {
+        h1 {
+            font-size: 3rem;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        header {
             width: 100%;
             background-color: #C1C1C1;
+            padding: 0.5rem 1rem;
+
             display: flex;
-            padding: 0.7%;
-            justify-content: space-evenly;
+            justify-content: space-between;
             align-items: center;
         }
 
-        .menu img {
-            display: inline-block;
-        }
-
-        .menu p {
-            display: inline-block;
-            font-family: Segoe UI Emoji;
-            font-size: 28px;
+        header p {
             color: #373435;
-            margin: 10px 19px 0px 19px;
-            vertical-align: top;
-
+            font-size: 1.5rem;
+            font-weight: 600;
         }
 
-        .icones {
-            display: inline-block;
-            vertical-align: top;
-            margin: 10px 0px 0px 0px;
-
-        }
-
-        .background {
-            background: url("img/banner.png");
-            background-size: cover;
-            background-position: top;
+        header>div>img {
+            width: 2rem;
         }
 
         .banner {
+            background: url("img/banner.png");
+            background-size: cover;
+            background-position: top;
+
             width: 100%;
-            height: 913px;
-            font-family: Segoe UI Emoji;
-            padding: 30px 170px 30px 170px;
-            font-size: 28px;
+            height: 512px;
+            padding: 2rem 10rem;
+            font-size: 1.5rem;
         }
 
         .banner h2 {
-            font-size: 46px;
-            margin: 15px;
-            text-align: justify;
-        }
-
-        .banner p {
-            margin: 16px;
+            font-size: 3rem;
+            margin-bottom: 1rem;
         }
 
         .inconveniente {
             width: 100%;
             background-color: #BFBFBF;
             color: red;
-            font-family: Segoe UI Emoji;
-            font-size: 21px;
+            padding: 3rem 1rem;
+            font-size: 1.3rem;
+
             display: flex;
-            padding: 3%;
             justify-content: space-around;
+        }
+
+        .inconveniente div {
+            width: 40%;
+            text-align: center;
         }
 
         .inconveniente h2 {
             color: #ED3237;
-            font-family: Segoe UI Emoji;
-            font-size: 30px;
-        }
-
-        .text {
-            text-align: center;
-        }
-
-        .text-alert {
-            font-size: 2em;
-        }
-
-        .if {
-            margin: 20px 0px 20px 80px;
+            font-size: 2rem;
+            margin-bottom: 10px;
         }
 
         .tagpet {
@@ -110,15 +92,6 @@
             display: flex;
         }
 
-        .texto {
-            display: inline-block
-        }
-
-        h1 {
-            font-size: 48px;
-            display: inline-block;
-        }
-
         .video {
             width: 100%;
             display: flex;
@@ -126,111 +99,64 @@
             align-items: center;
             margin-left: 100px;
         }
-
-        .rodape {
+        
+        footer {
             width: 100%;
-            height: 50px;
+            padding: 1rem 2rem;
             background-color: #C1C1C1;
             align-content: center;
-            padding: 10px 183px 10px 182px;
-        }
-
-        .final {
-            width: 100%;
-            height: 100%;
-            color: #373435;
-            font-size: 24px;
-            padding: 20px auto 0px auto;
             text-align: center;
-            vertical-align: center;
-            font-family: Segoe UI Emoji;
-        }
-
-        .ma-l-p {
-            margin-left: 100px;
-        }
-
-        .gamb-iarra {
-            display: block;
-            margin-top: 12px;
-        }
-
-        .ma-l-m {
-            margin-left: 30px;
-        }
-
-        .posiçao {
-            margin: 0px 20px 0px 20px;
         }
     </Style>
 </head>
 
 <body>
-    <div class="conteiner">
-        <header>
-            <div class="menu">
-                <img class="logo ma-l-m" src="img/logo.png" style="width: 216px" height="63px">
-                <p class=" ma-l-m">(xx) XXXX-XXXX</p>
-                <p>TagPet</p>
-                <p class="posiçao">Comprar</p>
-                <div>
-                    <img class="icones" src="icones/if_twitter_circle_294709.png">
-                    <img class=" icones" src="icones/if_facebook_circle_294710.png">
-                    <img class=" icones" src="icones/if_youtube_circle_294712.png">
-                    <img class=" icones" src="icones/if_google_circle_294707.png">
-                    <img class=" icones" src="icones/if_instagram_circle_294711.png">
-                </div>
+    <header>
+        <img src="img/logo.png" style="height: 3rem">
+        <p>Sobre</p>
+        <p>Comprar</p>
+        <p>(00) 00000-0000</p>
+        <div>
+            <img src="icones/icon-twitter.png">
+            <img src="icones/icon-facebook.png">
+            <img src="icones/icon-youtube.png">
+            <img src="icones/icon-google.png">
+            <img src="icones/icon-instagram.png">
+        </div>
+    </header>
+    <main>
+        <div class="banner">
+            <h2>Facilite a identificação e controle do historico de vida do seu melhor amigo</h2>
+            <p>Quem ama cuida. Quem ama protege.</p>
+        </div>
+        <div class="inconveniente">
+            <div>
+                <h2>Inconveniente 1</h2>
+                <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem
+                    sendo utilizado desde o século XV</p>
             </div>
-        </header>
-        <main class=" conteudo">
-            <div class="background">
-                <div class="banner">
-                    <h2 class="mais">Facilite a identificação e controle do historico de vida do seu melhor amigo</h2>
-                    <p class="mais">Quem ama cuida. Quem ama protege.</p>
-                </div>
+            <div>
+                <h2>Inconveniente 2</h2>
+                <p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível</p>
             </div>
-            <div class="inconveniente">
-                <div class="text">
-                    <i class="fa fa-exclamation-circle text-alert"></i>
-                    <h2 class="inconven">Inconveniente 1</h2>
-                    <span class="gamb-iarra"></span>
-                    <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem
-                        sendo utilizado desde o século XV</p>
-                </div>
-                <div class="text ma-l-p">
-                    <i class="fa fa-exclamation-circle text-alert"></i>
-                    <h2 class=" inconven">Inconveniente 2</h2>
-                    <span class="gamb-iarra"></span>
-                    <p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível</p>
-                </div>
-                <div class="text ma-l-p">
-                    <i class="fa fa-exclamation-circle text-alert"></i>
-                    <h2 class=" inconven">Inconveniente 3</h2>
-                    <span class="gamb-iarra"></span>
-                    <p>Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. Com mais de
-                        2000 anos, suas raízes podem ser encontradas em</p>
-                </div>
+        </div>
+        <div class="tagpet">
+            <div>
+                <h1>TagPet</h1>
+                <p>Existem muitas variações disponíveis de passagens de Lorem Ipsum, mas a maioria sofreu algum tipo
+                    de alteração, seja por inserção de passagens com humor, ou palavras aleatórias que não parecem
+                    nem um pouco convincentes. Se você pretende usar uma passagem de Lorem Ipsum, precisa ter
+                    certeza de que não há algo embaraçoso escrito escondido no meio do texto. Todos os geradores de
+                    Lorem Ipsum</p>
             </div>
-            <div class="tagpet">
-                <div class="texto">
-                    <h1>TagPet</h1>
-                    <p>Existem muitas variações disponíveis de passagens de Lorem Ipsum, mas a maioria sofreu algum tipo
-                        de alteração, seja por inserção de passagens com humor, ou palavras aleatórias que não parecem
-                        nem um pouco convincentes. Se você pretende usar uma passagem de Lorem Ipsum, precisa ter
-                        certeza de que não há algo embaraçoso escrito escondido no meio do texto. Todos os geradores de
-                        Lorem Ipsum</p>
-                </div>
-                <div class="video">
-                    <img src="icones/video-play.png" style="width: 100%;">
-                </div>
+            <div class="video">
+                <img src="icones/icon-videoPlay.png" style="width: 100%;">
             </div>
-            <footer class="rodape">
-                <div class="final">
-                    <p>2018 Tag Pet. Quem ama cuida quem ama protege.</p>
-                </div>
-            </footer>
-        </main>
-    </div>
+        </div>
+    </main>
+    <footer>
+        <p>2018 Tag Pet. Quem ama cuida quem ama protege.</p>
+    </footer>
 </body>
 
 </html>
